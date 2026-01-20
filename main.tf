@@ -10,7 +10,7 @@ module "ec2" {
 
   subnet_id     = module.vpc.subnet_id
   ami_id        = "ami-0f5ee92e2d63afc18" # Amazon Linux 2 (Mumbai)
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
 }
 
 module "s3" {
