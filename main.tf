@@ -9,7 +9,7 @@ module "ec2" {
   source = "./modules/ec2"
 
   subnet_id     = module.vpc.subnet_id
-  ami_id        = "ami-0f5ee92e2d63afc18" # Amazon Linux 2 (Mumbai)
+  ami_id        = "ami-0f5ee92e2d63afc18"
   instance_type = "t3.micro"
 }
 
